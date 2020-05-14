@@ -7,13 +7,19 @@ import store from "./store";
 import { loadUser } from "./actions/auth";
 import setAuthToken from "./utils/setAuthToken";
 
+// nav bar
 import Navbar from "./components/layout/Navbar";
+// landing
 import Landing from "./components/layout/Landing";
+// login and register
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 
 // dashboard
 import Dashboard from "./components/dashboard/Dashboard";
+
+// profile form
+import CreateProfile from "./components/profile-forms/CreateProfile";
 
 // private Route
 import PrivateRoute from "./components/routing/PrivateRoute";
@@ -44,6 +50,11 @@ const App = () => {
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute
+                exact
+                path="/create-profile"
+                component={CreateProfile}
+              />
             </Switch>
           </section>
         </Fragment>
