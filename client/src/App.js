@@ -20,6 +20,8 @@ import Dashboard from "./components/dashboard/Dashboard";
 
 // profile form
 import CreateProfile from "./components/profile-forms/CreateProfile";
+// edit profile
+import EditProfile from "./components/profile-forms/EditProfile";
 
 // private Route
 import PrivateRoute from "./components/routing/PrivateRoute";
@@ -54,6 +56,11 @@ const App = () => {
                 exact
                 path="/create-profile"
                 component={CreateProfile}
+              />
+              <PrivateRoute
+                exact
+                path="/edit-profile"
+                component={EditProfile}
               />
             </Switch>
           </section>
