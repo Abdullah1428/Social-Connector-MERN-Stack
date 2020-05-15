@@ -66,8 +66,8 @@ const PostItem = ({
 };
 
 PostItem.defaultProps = {
-    showActions = true
-}
+  showActions: true
+};
 
 PostItem.propTypes = {
   addLike: PropTypes.func.isRequired,

@@ -35,15 +35,15 @@ import Alert from "../layout/Alert";
 // not found component
 import NotFound from "../layout/NotFound";
 
-export const Routes = () => {
+const Routes = () => {
   return (
     <section className="container">
       <Alert />
       <Switch>
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
-        <Route exact path="/profiles" component={Profiles} />
-        <Route exact path="/profile/:id" component={Profile} />
+        <PrivateRoute exact path="/profiles" component={Profiles} />
+        <PrivateRoute exact path="/profile/:id" component={Profile} />
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
         <PrivateRoute exact path="/create-profile" component={CreateProfile} />
         <PrivateRoute exact path="/edit-profile" component={EditProfile} />
@@ -56,3 +56,5 @@ export const Routes = () => {
     </section>
   );
 };
+
+export default Routes;
