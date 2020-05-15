@@ -31,6 +31,9 @@ import AddExperience from "./components/profile-forms/AddExperience";
 // add education
 import AddEducation from "./components/profile-forms/AddEducation";
 
+// get posts
+import Posts from "./components/posts/Posts";
+
 // private Route
 import PrivateRoute from "./components/routing/PrivateRoute";
 
@@ -82,6 +85,7 @@ const App = () => {
                 path="/add-education"
                 component={AddEducation}
               />
+              <PrivateRoute exact path="/posts" component={Posts} />
             </Switch>
           </section>
         </Fragment>
