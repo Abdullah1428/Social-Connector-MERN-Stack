@@ -17,6 +17,10 @@ import Register from "./components/auth/Register";
 
 // dashboard
 import Dashboard from "./components/dashboard/Dashboard";
+// all profiles
+import Profiles from "./components/profiles/Profiles";
+// profile by id
+import Profile from "./components/profile/Profile";
 
 // profile form
 import CreateProfile from "./components/profile-forms/CreateProfile";
@@ -55,6 +59,8 @@ const App = () => {
             <Switch>
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/profiles" component={Profiles} />
+              <Route exact path="/profile/:id" component={Profile} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute
                 exact
