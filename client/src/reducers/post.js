@@ -6,7 +6,8 @@ import {
   ADD_POST,
   GET_POST,
   ADD_COMMENT,
-  REMOVE_COMMENT
+  REMOVE_COMMENT,
+  LOGOUT
 } from "../actions/types";
 
 const initialState = {
@@ -74,6 +75,14 @@ export default function(state = initialState, action) {
           ),
           loading: false
         }
+      };
+    case LOGOUT:
+      return {
+        ...state,
+        posts: [],
+        post: null,
+        loading: false,
+        error: {}
       };
     default:
       return state;
