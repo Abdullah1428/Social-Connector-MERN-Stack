@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://abdullah:abdullah@socialconnector-mdrgf.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "mernstackcourse",
+    "githubClientId": "a2722841fa0bed408d46",
+    "githubSecret": "47bc1a93d86b690b47cdaf6f59a006490d6e5da3"
+}
